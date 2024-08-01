@@ -16,10 +16,10 @@ Classes:
 
 Methods:
 --------
-- _request(method: str, endpoint: str, **kwargs): Internal method to make a request to
-    the d.vinci API.
-- request(method: str, endpoint: str, **kwargs): Public method to make a request to the
-    d.vinci API.
+- _request(method: str, endpoint: str, **kwargs): Internal method to make
+    a request to the d.vinci API.
+- request(method: str, endpoint: str, **kwargs): Public method to make
+    a request to the d.vinci API.
 - get_status(): Public method to check the status of the API.
 
 Functions:
@@ -45,10 +45,10 @@ class DvinciClient:
 
     Methods:
     --------
-    - _request(method: str, endpoint: str, **kwargs): Internal method to make a request to
-        the d.vinci API.
-    - request(method: str, endpoint: str, **kwargs): Public method to make a request to the
-        d.vinci API.
+    - _request(method: str, endpoint: str, **kwargs): Internal method to make
+        a request to the d.vinci API.
+    - request(method: str, endpoint: str, **kwargs): Public method to make a
+        request to the d.vinci API.
     - get_status(): Public method to check the status of the API.
 
     """

@@ -1,0 +1,14 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "type": "object",
+    "properties": {
+        "correspondenceTemplateId": {
+            "description": "id of the correspondence template for candidate emails.",
+            "type": "string"
+        },
+        "comment": {
+            "description": "comment concerning the status change.",
+            "type": "string"
+        }
+    }
+}

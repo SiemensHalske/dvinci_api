@@ -1,0 +1,50 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "type": "array",
+    "items": {
+        "type": "object",
+        "properties": {
+            "id": {
+                "description": "Property is not settable - only returned by the system.",
+                "type": "string"
+            },
+            "dateCreated": {
+                "description": "Technical creation date of the attachment.",
+                "type": "string",
+                "format": "date-time"
+            },
+            "filename": {
+                "description": "File name of the attachment.",
+                "type": "string"
+            },
+            "fileSize": {
+                "description": "File size of the attachment.",
+                "type": "integer"
+            },
+            "contentType": {
+                "description": "Content type of the attachment.",
+                "type": "string"
+            },
+            "description": {
+                "description": "Description of the attachment.",
+                "type": "string"
+            },
+            "conversionState": {
+                "description": "Conversion state of the attachment - null means conversion not executed.",
+                "enum": [
+                    "DONE",
+                    "DOING",
+                    "FAILED",
+                    null
+                ]
+            }
+        },
+        "required": [
+            "id",
+            "dateCreated",
+            "filename",
+            "fileSize",
+            "contentType"
+        ]
+    }
+}
