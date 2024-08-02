@@ -1,0 +1,43 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "type": "object",
+    "properties": {
+        "id": {
+            "type": [
+                "integer",
+                "null"
+            ]
+        },
+        "version": {
+            "type": "integer"
+        },
+        "externalId": {
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        "name": {
+            "type": "string"
+        },
+        "orgUnitId": {
+            "type": [
+                "integer",
+                "null"
+            ]
+        }
+    },
+    "userIds": {
+        "description": "List of user ids",
+        "items": {
+            "type": [
+                "integer"
+            ]
+        },
+        "type": "array"
+    },
+    "required": [
+        "name",
+        "version"
+    ]
+}
